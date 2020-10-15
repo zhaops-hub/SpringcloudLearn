@@ -1,0 +1,12 @@
+2020-10-15 16:10:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_USER" not found; SQL statement:
+select user0_.id as id1_0_, user0_.avatar as avatar2_0_, user0_.nickname as nickname3_0_ from tb_user user0_ limit ? [42102-200]
+2020-10-15 16:13:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_USER" not found; SQL statement:
+select user0_.id as id1_0_, user0_.avatar as avatar2_0_, user0_.nickname as nickname3_0_ from tb_user user0_ limit ? [42102-200]
+2020-10-15 16:13:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_USER" not found; SQL statement:
+select user0_.id as id1_0_, user0_.avatar as avatar2_0_, user0_.nickname as nickname3_0_ from tb_user user0_ limit ? [42102-200]
+2020-10-15 16:15:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_USER" not found; SQL statement:
+select user0_.id as id1_0_, user0_.avatar as avatar2_0_, user0_.nickname as nickname3_0_ from tb_user user0_ limit ? [42102-200]
