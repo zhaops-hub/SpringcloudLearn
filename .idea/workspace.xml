@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="902b865a-e485-40d2-94b6-b693e483a7bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbh2/dbc2m.lock.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbh2/dbc2m.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbh2/dbc2m.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log_error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/src/main/java/com/zhaops/consumer/ConsumerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/src/main/java/com/zhaops/springcloudprovider/SpringcloudproviderApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/src/main/java/com/zhaops/springcloudprovider/api/HelloProviderEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/src/test/java/com/zhaops/consumer/ConsumerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudprovider/src/test/java/com/zhaops/springcloudprovider/SpringcloudproviderApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaops/springbootshop/SpringbootshopApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaops/springbootshop/user/api/UserEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaops/springbootshop/user/dto/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaops/springbootshop/user/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaops/springbootshop/user/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaops/springbootshop/user/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaops/springbootshop/user/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhaops/springbootshop/user/util/HibernatePhysicalNamingNamingStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhaops/springbootshop/SpringbootshopApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/warn.log" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iv84MwWk1tNihUGw4BDn0PZeIM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="902b865a-e485-40d2-94b6-b693e483a7bf" name="Default Changelist" comment="" />
+      <created>1602776514811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602776514811</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1060" y="458" key="FileChooserDialogImpl" timestamp="1602776563898">
+      <screen x="0" y="0" width="2560" height="1406" />
+    </state>
+    <state x="1060" y="458" key="FileChooserDialogImpl/0.0.2560.1406@0.0.2560.1406" timestamp="1602776563898" />
+  </component>
+</project>
