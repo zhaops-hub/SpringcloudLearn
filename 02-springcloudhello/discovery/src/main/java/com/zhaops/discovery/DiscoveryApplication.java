@@ -1,18 +1,18 @@
-package com.zhaops.provider;
+package com.zhaops.discovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @author SoYuan
  */
-@EnableEurekaClient
+@EnableEurekaServer
 @SpringBootApplication
-public class ProviderApplication {
+public class DiscoveryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProviderApplication.class, args);
+		SpringApplication.run(DiscoveryApplication.class, args);
 	}
 
 }
