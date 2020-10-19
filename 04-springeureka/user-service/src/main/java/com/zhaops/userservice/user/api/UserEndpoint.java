@@ -4,6 +4,7 @@ import com.zhaops.userservice.user.dto.UserDto;
 import com.zhaops.userservice.user.entity.User;
 import com.zhaops.userservice.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,10 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/users")
 public class UserEndpoint {
+
+    @Value("${server.port}")
+    protected int servicePort = 0;
+
     @Autowired
     private UserService userService;
 
@@ -34,7 +39,7 @@ public class UserEndpoint {
         Page<User> page = this.userService.getPage(pageable);
         if (null != page) {
             return page.getContent().stream().map((user) -> {
-                return new UserDto(user);
+                return new UserDto(user, servicePort);
             }).collect(Collectors.toList());
         }
         return Collections.EMPTY_LIST;
@@ -42,12 +47,13 @@ public class UserEndpoint {
 
     /**
      * 获取用户详情
+     *
      * @param id
      * @return
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public UserDto detail(@PathVariable Long id) {
         User user = this.userService.load(id);
-        return (null != user) ? new UserDto(user) : null;
+        return (null != user) ? new UserDto(user, servicePort) : null;
     }
 }

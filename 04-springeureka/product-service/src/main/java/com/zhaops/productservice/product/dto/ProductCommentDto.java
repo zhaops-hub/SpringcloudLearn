@@ -22,7 +22,6 @@ public class ProductCommentDto implements Serializable {
     private UserDto author;                                     // 评论作者
     private String content;                                     // 评论内容
     private Date created;                                       // 创建时间
-
     public ProductCommentDto() {
 
     }

@@ -16,15 +16,17 @@ public class UserDto implements Serializable {
     private Long id;
     private String nickname;
     private String avatar;
+    private int serverPort;
 
     public UserDto() {
 
     }
 
-    public UserDto(User user) {
+    public UserDto(User user,int serverPort) {
         this.id = user.getId();
         this.nickname = user.getNickname();
         this.avatar = user.getAvatar();
+        this.serverPort = serverPort;
     }
 
     @Override
@@ -43,6 +45,7 @@ public class UserDto implements Serializable {
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -50,6 +53,7 @@ public class UserDto implements Serializable {
     public String getNickname() {
         return nickname;
     }
+
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
@@ -57,7 +61,16 @@ public class UserDto implements Serializable {
     public String getAvatar() {
         return avatar;
     }
+
     public void setAvatar(String avatar) {
         this.avatar = avatar;
+    }
+
+    public int getServerPort() {
+        return serverPort;
+    }
+
+    public void setServerPort(int serverPort) {
+        this.serverPort = serverPort;
     }
 }

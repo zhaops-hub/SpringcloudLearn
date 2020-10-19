@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * @author SoYuan
  */
-@JsonIgnoreProperties(value = { "hibernateLazyInitializer"})
+@JsonIgnoreProperties(value = {"hibernateLazyInitializer"})
 public class UserDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -17,6 +17,8 @@ public class UserDto implements Serializable {
     private Long id;
     private String nickname;                                // 昵称
     private String avatar;                                  // 用户头像
+    private int serverPort;
+
 
     public UserDto() {
 
@@ -44,6 +46,7 @@ public class UserDto implements Serializable {
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -51,6 +54,7 @@ public class UserDto implements Serializable {
     public String getNickname() {
         return nickname;
     }
+
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
@@ -58,7 +62,16 @@ public class UserDto implements Serializable {
     public String getAvatar() {
         return avatar;
     }
+
     public void setAvatar(String avatar) {
         this.avatar = avatar;
+    }
+
+    public int getServerPort() {
+        return serverPort;
+    }
+
+    public void setServerPort(int serverPort) {
+        this.serverPort = serverPort;
     }
 }

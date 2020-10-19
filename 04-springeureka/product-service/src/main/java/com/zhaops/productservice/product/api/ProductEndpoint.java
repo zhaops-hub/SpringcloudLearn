@@ -6,6 +6,7 @@ import com.zhaops.productservice.product.entity.Product;
 import com.zhaops.productservice.product.entity.ProductComment;
 import com.zhaops.productservice.product.repository.ProductCommentRepository;
 import com.zhaops.productservice.product.repository.ProductRepository;
+import com.zhaops.productservice.product.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +29,9 @@ public class ProductEndpoint {
     private ProductRepository productRepository;
     @Autowired
     private ProductCommentRepository productCommentRepository;
+
+    @Autowired
+    private UserService userService;
 
     @Autowired
     @Qualifier(value = "restTemplate")
@@ -59,7 +63,8 @@ public class ProductEndpoint {
             ProductCommentDto dto = new ProductCommentDto(comment);
             Long productId = comment.getProductId();
             dto.setProduct(this.productRepository.getOne(productId));
-            dto.setAuthor(this.loadUser(comment.getAuthorId()));
+            UserDto user = this.userService.load(comment.getAuthorId());
+            dto.setAuthor(user);
             return dto;
         }).collect(Collectors.toList());
 

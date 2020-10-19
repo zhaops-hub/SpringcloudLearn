@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 7000
 
 spring:
   application:
@@ -7,7 +7,7 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost1
     lease-expiration-duration-in-seconds: 10
     lease-renewal-interval-in-seconds: 3
     prefer-ip-address: true
@@ -19,7 +19,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://127.0.0.1:7000/eureka/,http://127.0.0.1:6000/eureka/
+      defaultZone: http://127.0.0.1:8000/eureka/,http://127.0.0.1:6000/eureka/
 
 logging:
   level:
