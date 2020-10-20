@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * @author SoYuan
  */
-@FeignClient("USERSERVICE")
+@FeignClient(name = "USERSERVICE", fallback = UserServiceFallback.class)
 public interface UserService {
 
     /**
      * 通过id获取用户
+     *
      * @param id
      * @return
      */

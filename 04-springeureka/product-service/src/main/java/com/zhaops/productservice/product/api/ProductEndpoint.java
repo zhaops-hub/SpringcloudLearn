@@ -6,6 +6,7 @@ import com.zhaops.productservice.product.entity.Product;
 import com.zhaops.productservice.product.entity.ProductComment;
 import com.zhaops.productservice.product.repository.ProductCommentRepository;
 import com.zhaops.productservice.product.repository.ProductRepository;
+import com.zhaops.productservice.product.services.HelloServiceCommand;
 import com.zhaops.productservice.product.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -46,6 +47,20 @@ public class ProductEndpoint {
     public List<Product> list() {
         return this.productRepository.findAll();
     }
+
+
+    /**
+     * 获取用户
+     *
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
+    public UserDto getUser(@PathVariable Long id) {
+        HelloServiceCommand command = new HelloServiceCommand("getUser", id, this.restTemplate);
+        return command.execute();
+    }
+
 
     /**
      * 获取指定商品的评论列表

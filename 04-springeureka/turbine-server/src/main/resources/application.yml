@@ -1,0 +1,24 @@
+server:
+  port: 8500
+
+
+spring:
+  application:
+    name: springcloud-turbine
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.16.100.177:8000/eureka
+
+turbine:
+  combine-host-port: true
+  app-config: PRODUCTSERVICE
+  cluster-name-expression: new String('default')
+  instanceUrlSuffix: /hystrix.stream
+
+
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"

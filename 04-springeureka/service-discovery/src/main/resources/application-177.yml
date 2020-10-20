@@ -1,0 +1,27 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: servicediscovery
+
+eureka:
+  instance:
+    hostname: localhost
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 3
+    prefer-ip-address: true
+    ip-address: 172.16.100.177
+  server:
+    wait-time-in-ms-when-sync-empty: 5
+    enableSelfPreservation: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone:  http://172.16.100.177:8000/eureka/
+
+logging:
+  level:
+    org:
+      springframework: INFO

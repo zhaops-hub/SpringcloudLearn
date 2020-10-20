@@ -35,4 +35,4 @@ eureka:
   client:
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8000/eureka
+      defaultZone: http://172.16.100.177:8000/eureka
