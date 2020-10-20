@@ -34,3 +34,9 @@ public class TurbineserverApplication {
 	}
 
 }
+
+/**
+ *
+ * 启动后的要访问的地址
+ * http://localhost:8500/turbine.stream
+ */
