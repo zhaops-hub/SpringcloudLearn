@@ -9,7 +9,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8000/eureka
+      defaultZone: http://172.16.100.177:8000/eureka
 
 turbine:
   combine-host-port: true
@@ -21,4 +21,4 @@ turbine:
 
 hystrix:
   dashboard:
-    proxy-stream-allow-list: "*"
+    proxy-stream-allow-list: "172.16.100.177"

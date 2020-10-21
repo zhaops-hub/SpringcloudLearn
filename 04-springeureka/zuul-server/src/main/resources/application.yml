@@ -1,0 +1,21 @@
+server:
+  port: 8600
+
+
+spring:
+  application:
+    name: zuul
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.16.100.177:8000/eureka
+
+zuul:
+  routes:
+    productservice: /product/**
+    umstransition:
+      path: /umstransition/**
+      serviceId: umstransition
+      url: http://172.16.100.61:6121

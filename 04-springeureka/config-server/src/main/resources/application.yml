@@ -1,0 +1,21 @@
+server:
+  port: 8700
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.16.100.177:8000/eureka
+
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhaops-hub/confighub.git
+          # 这个一定一定要看好，真坑
+          default-label: main
+
