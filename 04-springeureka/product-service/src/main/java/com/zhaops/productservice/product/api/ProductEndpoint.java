@@ -10,6 +10,7 @@ import com.zhaops.productservice.product.services.HelloServiceCommand;
 import com.zhaops.productservice.product.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -38,6 +39,9 @@ public class ProductEndpoint {
     @Qualifier(value = "restTemplate")
     private RestTemplate restTemplate;
 
+    @Value("${name}")
+    private String name;
+
     /**
      * 获取商品列表
      *
@@ -59,6 +63,16 @@ public class ProductEndpoint {
     public UserDto getUser(@PathVariable Long id) {
         HelloServiceCommand command = new HelloServiceCommand("getUser", id, this.restTemplate);
         return command.execute();
+    }
+
+    /**
+     * 动态获取配置文件测试
+     *
+     * @return
+     */
+    @RequestMapping(value = "/getName", method = RequestMethod.GET)
+    public String GetName() {
+        return name;
     }
 
 
