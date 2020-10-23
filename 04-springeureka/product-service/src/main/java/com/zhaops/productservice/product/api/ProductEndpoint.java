@@ -39,7 +39,6 @@ public class ProductEndpoint {
     @Qualifier(value = "restTemplate")
     private RestTemplate restTemplate;
 
-    @Value("${name}")
     private String name;
 
     /**

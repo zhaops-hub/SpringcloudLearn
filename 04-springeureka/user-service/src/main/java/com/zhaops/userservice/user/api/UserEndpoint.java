@@ -56,4 +56,15 @@ public class UserEndpoint {
         User user = this.userService.load(id);
         return (null != user) ? new UserDto(user, servicePort) : null;
     }
+
+    /**
+     * 删除用户
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public boolean delete(@PathVariable Long id){
+        this.userService.delete(id);
+        return true;
+    }
 }
